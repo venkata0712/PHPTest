@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class test1 {
 
 	public static void main(String[] args) throws Exception {
-		System.setProperty("webdriver.chrome.driver","c:\\softwares\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/local/share/chromedriver");
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("http://13.59.84.32/PHPTest/index.php");
 		
