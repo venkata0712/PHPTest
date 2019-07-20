@@ -8,8 +8,9 @@ public class test1 {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver","/usr/local/share/chromedriver");
 		ChromeDriver driver=new ChromeDriver();
-		driver.get("http://13.59.84.32/PHPTest/index.php");
-		
+		Thread.sleep(2000);
+		driver.get("http://172.31.35.123/PHPTest/index.php");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ASD");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("rohit");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[3]/td[2]/input")).sendKeys("Virat");
@@ -20,6 +21,7 @@ public class test1 {
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[8]/td/input[1]")).sendKeys(" ");
 		
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[8]/td/input[2]")).click();
+		driver.close();
 	}
 	
 	
