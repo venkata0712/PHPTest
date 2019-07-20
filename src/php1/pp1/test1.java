@@ -6,10 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class test1 {
 
 	public static void main(String[] args) throws Exception {
-		System.setProperty("webdriver.chrome.driver","/usr/local/share/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedrive");
 		ChromeDriver driver=new ChromeDriver();
 		Thread.sleep(2000);
-		driver.get("http://172.31.35.123/PHPTest/index.php");
+		driver.get("http://13.59.84.32/PHPTest/index.php");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ASD");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("rohit");
@@ -21,7 +21,7 @@ public class test1 {
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[8]/td/input[1]")).sendKeys(" ");
 		
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[8]/td/input[2]")).click();
-		driver.close();
+		//driver.close();
 	}
 	
 	
