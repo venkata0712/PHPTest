@@ -18,7 +18,7 @@ public class test1 {
 		WebDriver driver = new ChromeDriver(chromeOptions);  
 		
 		Thread.sleep(2000);
-		driver.get("http://172.31.35.123/PHPTest/index.php");
+		driver.get("http://18.188.33.81/PHPTest/index.php");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ASD");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("rohit");
