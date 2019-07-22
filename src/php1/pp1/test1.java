@@ -2,11 +2,15 @@ package php1.pp1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class test1 {
 
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
 		ChromeDriver driver=new ChromeDriver();
 		Thread.sleep(2000);
 		driver.get("http://13.59.84.32/PHPTest/index.php");
