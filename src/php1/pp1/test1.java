@@ -21,14 +21,11 @@ public class test1 {
 		chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");  
 		WebDriver driver = new ChromeDriver(chromeOptions);  
 		WebDriverWait wait = new WebDriverWait(driver, 100);
-		
 		Thread.sleep(2000);
 		System.out.println("Entered Browser");
-		driver.get("http://18.221.170.199/PHPTest/index.php");
+		driver.get("http://172.31.35.123/PHPTest/index.php");
 		System.out.println("View Browser");
 		Thread.sleep(3000);
-		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")));
-		//wait.until(ExpectedConditions.elementToBeSelected(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")));
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ASD");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("rohit");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[3]/td[2]/input")).sendKeys("Virat");
