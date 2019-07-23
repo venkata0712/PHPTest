@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class test1 {
 
 	public static void main(String[] args) throws Exception {
-		//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-		System.setProperty("webdriver.chrome.driver","C://Softwares//Chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		//System.setProperty("webdriver.chrome.driver","C://Softwares//Chromedriver.exe");
 		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.addArguments("--headless");
 //		chromeOptions.addArguments("--no-sandbox");
